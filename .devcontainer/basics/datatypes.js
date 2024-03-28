@@ -26,3 +26,15 @@ let N=Boolean(Loggedin);
 console.log(typeof N);
 console.log(N);
 //" "->false  " ananya"->true
+//*******************operations************
+let num =3;
+let negvalue=-num;
+console.log(negvalue);
+let num1 =0;
+let posvalue=+num1;
+console.log(posvalue);
+console.log(typeof posvalue);
+console.log("1"+2+2);
+console.log(2+2+"1");
+console.log(2+2*5%3/1-6+3);
+console.log(+true);
