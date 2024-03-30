@@ -17,7 +17,7 @@ let anothername= myname;
 anothername="sadkasjk"
 console.log(anothername);
 console.log(myname);
-console.log(heap);
+console.log("heap");
 let userone={
     user:"hdhsukl",
     email:"dkjkdj",
