@@ -80,7 +80,25 @@ console.log(tinderuser.hasOwnProperty("name"));
 console.log(users)
 const u4={...users}
 console.log(u4)
+course={
+    courseinst:"ananya",
+    price:222
 
+}
+console.log(course.courseinst)
+const {courseinst:inst}= course
+console.log(inst)
+/*{
+    "name":"ana",
+    "coursename":"js ",
+    "price":"free"
+}
+json api format*/
+[
+    {},
+    {},
+    {}
+]
 
 
 
