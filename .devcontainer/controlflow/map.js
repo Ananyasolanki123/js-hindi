@@ -27,5 +27,5 @@ mynumbers.forEach((nums)=>{
     newn.push(n);
 })
 console.log(newn);
-const nuu=mynumbers.map((nums)=>nums*10).map((nums)=>nums+1).filter((nums)=>nums+2)
+const nuu=mynumbers.map((nums)=>nums*10).map((nums)=>nums+1).filter((nums)=>nums>=20)
 console.log(nuu);
