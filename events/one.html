@@ -46,6 +46,17 @@
         e.stopPropagation();
         console.log('google clicked');
     },false)
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagNmae==='IMG'){
+            console.log('e.target.id')
+            let removeit=e.target.parentNode
+            removeit.remove()
+
+        }
+       // removeit.parentNode.removeChild(removeit)
+
+    })
 
     
 
