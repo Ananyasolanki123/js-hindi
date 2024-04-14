@@ -12,19 +12,17 @@
 
 </body>
 <script> 
-const sayDate=function(str){
-    console.log(str,Date.now());
-}
-const seti =setInterval(sayDate,1000,'hi')
-document.querySelector("#start").addEventListener("click",function( ){
-    setInterval(sayDate,1000,"hi")
-    console.log(seti)
+let setid;
+const startevent=function(str){
+   setid= setInterval(str,Date.now(),'hi');
 
-})
-document.querySelector('#stop').addEventListener('click',function(){
-    clearInterval(seti)
+};
+const stopevent=function(){
+    clearInterval(setid);
+};
+document.querySelector("#start").addEventListener("click",startevent);
+document.querySelector('#stop').addEventListener('click',stopevent);
 
-})
 
 
 //clearInterval(set)
