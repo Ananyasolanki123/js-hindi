@@ -3,9 +3,10 @@
 [Click here] (https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 # solution code
 ## project1
-'''javascript
+```javascript
 
 //generate arandom color
+
 const randomcolor=function(){
   const hex="0123456789ABCDEF";
   let color ='#';
@@ -31,4 +32,4 @@ const stopchangingcolor=function(){
 
 document.querySelector('#start').addEventListener('click',startchangingcolor);
 document.querySelector('#stop').addEventListener('click',stopchangingcolor);
-'''
+```
