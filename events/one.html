@@ -29,11 +29,24 @@
     //jquery-on
     document.getElementById('owl').addEventListener('click',function(e){
         console.log(e);
-    },false)
+    },false)//false is used in event public which goes from bottom to top and true is used in capturing which goes from top to bottom
     //events-type,timestamp,defaultPrevented
     //target,toElement,srcElement,currentTarget
     //clientX,clientY,screenX,screenY
-    //altkey,ctrlkey
+    //altkey,ctrlkey,shiftkey,keycode
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log('clicked inside ul');
+    },false)
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log('owl clicked');
+        e.stopPropagation()
+    },false)
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('google clicked');
+    },false)
+
     
 
 </script>
