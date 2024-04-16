@@ -9,25 +9,21 @@
     <h1> Chai aur js</h1>
     <button id="stop">stop</button>
     <button id="start">start</button>
-
 </body>
 <script> 
 let setid;
-const startevent=function(str){
-   setid= setInterval(str,Date.now(),'hi');
 
+const startevent = function() {
+   setid = setInterval(() => {
+      console.log('hi');
+   }, 1000); // Change 1000 to the interval duration you desire (in milliseconds)
 };
-const stopevent=function(){
+
+const stopevent = function() {
     clearInterval(setid);
 };
-document.querySelector("#start").addEventListener("click",startevent);
-document.querySelector('#stop').addEventListener('click',stopevent);
 
-
-
-//clearInterval(set)
-   
-
-
+document.querySelector("#start").addEventListener("click", startevent);
+document.querySelector('#stop').addEventListener('click', stopevent);
 </script>
 </html>
