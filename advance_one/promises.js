@@ -45,4 +45,6 @@ promisefour.then((user)=>{
     console.log(username);
 }).catch(function(error){
     console.log(error);
+}).finally(()=>{
+    console.log("promise is finally resloved or reject")
 })
